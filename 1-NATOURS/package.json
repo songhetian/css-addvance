@@ -1,0 +1,17 @@
+{
+  "name": "1-natours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "imurmurhash": "^0.1.4"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
