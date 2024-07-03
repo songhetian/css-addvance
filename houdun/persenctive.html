@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .front {
+            width: 200px;
+            height: 200px;
+            border: 2px solid seagreen;
+            margin: auto;
+            perspective: 1500px;
+            transform-style: preserve-3d;
+            transform: perspective(1500px) rotate(45deg);
+        }
+
+        .neibu {
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            transform: translateZ(-200px);
+        }
+
+        .skew1 {
+            width: 200px;
+            height: 55px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+
+        }
+
+        .btn {
+            width: 100%;
+            height: 55px;
+            position: absolute;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            text-align: center;
+            border: 1px solid saddlebrown;
+
+        }
+
+        .btn::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 100%;
+            background-color: sandybrown;
+            transform: skew(45deg);
+            position: absolute;
+            transition: all .5s;
+        }
+
+        .btn:hover::after {
+            width: 200%;
+        }
+
+        .origin1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid seagreen;
+            margin: auto;
+            transition: 60s;
+            transform-origin: 110% 110%;
+        }
+
+        .origin1:hover {
+            transform: rotate(360deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="front">
+        <div class="neibu"></div>
+    </div>
+
+    <div class="skew1">
+        <a href="" class="btn">123</a>
+    </div>
+
+    <div class="origin1">
+
+    </div>
+</body>
+
+</html>

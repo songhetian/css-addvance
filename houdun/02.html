@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color:#57606f ;
+            perspective:1500px;
+            transform-style: preserve-3d;
+		}
+
+		.waibu {
+			width: 500px;
+			height: 500px;
+			border: 1px solid #70a1ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			transform-style: preserve-3d;
+			transform: rotateY(45deg);
+
+		}
+
+		.neibu {
+			width: 100px;
+			height: 200px;
+			background-color:#ff6348 ;
+			transform: translateZ(-700px);
+		}
+	</style>
+</head>
+<body>
+	<div class="waibu">
+		<div class="neibu">
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<style>
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        width: 100vw;
+		height: 100vh;
+		background-color: darkgrey;
+	}
+	main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		width: 200px;
+	}
+
+	main a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		border: 3px solid #eb4d4b;
+		color: white;
+		text-decoration: none;
+		height: 55px;
+		flex: 1;
+		position: relative;
+        overflow: hidden;
+	}
+
+	.btn::after{
+		content: "";
+		width: 0;
+		height: 100%;
+        position: absolute;
+		background-color: #ff7979;
+		z-index: -1;
+		transform: skew(45deg);
+		transition: all 1s;
+
+	}
+
+	.btn:hover::after {
+		width: 200%;
+	}
+</style>
+<body>
+<main>
+	<a href="" class="btn">
+		1234567
+	</a>
+</main>
+</body>
+</html>

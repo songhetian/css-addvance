@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        position: relative;
+        height: 500px;
+    }
+
+    main>div {
+        width: 200px;
+        height: 400px;
+        border: 1px solid silver;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+    }
+
+    main a {
+
+        display: inline-block;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
+
+    main>div {
+        transform: translateY(-100%);
+    }
+
+    main>div:nth-child(1):target {
+        background-color: aquamarine;
+        transform: translateY(0);
+    }
+
+    main>div:nth-child(2):target {
+        background-color: blue;
+        transform: translateY(0);
+    }
+
+    main>div:nth-child(3):target {
+        background-color: yellow;
+        transform: translateY(0);
+    }
+</style>
+
+<body>
+
+    <main>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </main>
+    <a href="#div1">1</a>
+    <a href="#div2">2</a>
+    <a href="#div3">3</a>
+</body>
+
+</html>
